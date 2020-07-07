@@ -54,7 +54,8 @@ nav ul {
 nav ul li {
 	display: inline-block;
 	margin-right: 1em;
-	font-size: 0.75em;
+	font-size: 1em;
+	font-style: italic;
 }
 
 p {
@@ -69,6 +70,7 @@ figure {
 
 figcaption {
 	font-style: italic;
+	font-size: 0.75em;
 }
 
 footer {
