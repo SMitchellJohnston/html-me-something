@@ -4,14 +4,12 @@ body {
 	margin: 0 auto;
 	background-color:  #404040
 ;
-	font-size: 85%;
+	font-size: 14;
 }
 
-header,
-main,
-footer {
-	background-color: #ddd;
-	font-size: 1.6em;
+header, main, footer {
+	background-color: #5c5c3d;
+	font-size: 85%;
 }
 
 header {
@@ -88,9 +86,9 @@ footer p {
 	nav ul li {
 		margin: 1em 0;
 		display: block;
-		font-size: 1em;
+		font-size: 90%;
 	}
 	body {
-		font-size: 50%;
+		font-size: 85%;
 	}
 }
