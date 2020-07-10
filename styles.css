@@ -8,7 +8,18 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-color:  rgb(0, 138, 230);
 	font-size: 14;
 	font-family: 'Londrina Solid', cursive;;
+}
+
+article {
+	background-color: rgb(0, 153, 115, 0.6)
+}
+
+section {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding-block: 2;
+	background-color:  rgb(0, 138, 230);
 }
