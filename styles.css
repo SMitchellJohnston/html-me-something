@@ -38,7 +38,7 @@ ul {
   }
   
   li {
-	float: right;
+	float: left;
   }
   
   li a {
@@ -111,9 +111,9 @@ table {
 }
 
 #wrapper .text {
-	position:relative;
-	bottom:100px;
-	left:0px;
+	position:absolute;
+	top: 50%;
+	left: 50%;
 	visibility:hidden;
 }
 	
