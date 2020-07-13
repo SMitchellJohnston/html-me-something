@@ -2,7 +2,7 @@
 
 body {
 	width: 100%;
-	max-width: 1024px;
+	max-width: 1280px;
 	margin: 0 auto;
 	background-image: url("images/macncheez.jpg");
 	background-size: cover;
@@ -13,26 +13,27 @@ body {
 }
 
 article {
-	background-color: rgba(255, 196, 2, 0.3)
+	background-color: rgba(255, 94, 0, 0.6)
 }
 
 section {
 	max-width: 96%;
 	margin: 0 auto;
-	background-color:  rgba(255, 94, 0, 0.6);
+	padding: 24px;
+	background-color: rgba(255, 178, 106, 0.3);
+	
 }
 
 ul {
 	position: fixed;
   	top: 0;
 	width: 100%;
-	max-width: 1024px;
+	max-width: 1280px;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: rgb(230, 157, 0);
-	position: sticky
+	background-color: rgb(230, 157, 0);	
   }
   
   li {
@@ -47,7 +48,6 @@ ul {
 	text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
   li a:hover {
 	background-color:  rgb(201, 135, 14);
   }
@@ -57,6 +57,10 @@ footer{
 		text-align: center;
 }
 
+hr {
+	border: 5px solid  rgb(230, 157, 0);
+	border-radius: 5px;
+}
 
 
 /* img {
@@ -78,7 +82,7 @@ footer{
 }
 
 .art:hover {
-	box-shadow: 0 0 2px rgba(0, 140, 186, 0.5);
+	box-shadow: 0 0 2px rgba(186, 37, 0, 0.5);
 }
 
 .subtitle {
@@ -87,22 +91,27 @@ footer{
 }
 
 div.gallery {
-	border: 1px solid #ccc;
+	border: 3px solid rgb(255, 115, 0);
   }
   
   div.gallery:hover {
-	border: 1px solid #777;
+	border: 3px solid rgb(129, 34, 5);
   }
   
   div.gallery img {
 	width: 100%;
-	max-width: 50px
-	height: auto;
+	max-width:350px;
+	/* height: 100%;
+	max-height: 400px; */
+	object-fit: cover;
+
   }
   
   div.desc {
 	padding: 15px;
+	font-size: 1em;
 	text-align: center;
+	background-color: rgba(255, 178, 106, 0.9);
   }
   
   * {
