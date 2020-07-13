@@ -17,8 +17,7 @@ article {
 }
 
 section {
-	width: 100%;
-	max-width: 960px;
+	max-width: 96%;
 	margin: 0 auto;
 	background-color:  rgba(255, 94, 0, 0.6);
 }
@@ -34,7 +33,6 @@ ul {
 	overflow: hidden;
 	background-color: rgb(230, 157, 0);
 	position: sticky
-	position: -webkit-sticky;
   }
   
   li {
@@ -59,64 +57,79 @@ footer{
 		text-align: center;
 }
 
-figure {
-	text-align: center;
-	background-color: rgb(255, 225, 93);
-    width: 80%;
-    height: auto;
-   }
-  
-figcaption{
-	font-size: 0.8em;
-	text-shadow: rgba(243, 216, 60, 0.8) 3px 3px;
-  }
 
-img {
+
+/* img {
 	display: block;
   	margin-left: auto;
  	margin-right: auto;
- 	width: auto;
+ 	max-width: 100%;
     height: auto;
     opacity: 1;
     transition: .5s ease;
 	backface-visibility: visible;
-}
+} */
 
 .art{
-	width: 95%;
-	height: auto;
+	border: 2px solid rgba(199, 96, 0);
+	border-radius: 4px;
+	padding: 5px;
+	width: 150px
 }
 
+.art:hover {
+	box-shadow: 0 0 2px rgba(0, 140, 186, 0.5);
+}
 
 .subtitle {
 	text-align: center;
 	font-size: 12px;
 }
 
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.artsection::-webkit-scrollbar {
-	display: none;
+div.gallery {
+	border: 1px solid #ccc;
   }
   
-/* Hide scrollbar for IE, Edge and Firefox */
-.artsection {
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
+  div.gallery:hover {
+	border: 1px solid #777;
   }
-
-table {
-	width: 95%;
-	max-width: 1024px;
-}
-
-#wrapper .text {
-	position:absolute;
-	top: 50%;
-	left: 50%;
-	visibility:hidden;
-}
-	
-#wrapper:hover .text {
-	visibility:visible;
-}
+  
+  div.gallery img {
+	width: 100%;
+	max-width: 50px
+	height: auto;
+  }
+  
+  div.desc {
+	padding: 15px;
+	text-align: center;
+  }
+  
+  * {
+	box-sizing: border-box;
+  }
+  
+  .responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+	.responsive {
+	  width: 49.99999%;
+	  margin: 6px 0;
+	}
+  }
+  
+  @media only screen and (max-width: 500px) {
+	.responsive {
+	  width: 100%;
+	}
+  }
+  
+  .clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
